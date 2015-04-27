@@ -29,5 +29,6 @@ gpg-mailgate    unix    -       n       n       -       -       pipe flags= user
         -o smtpd_authorized_xforward_hosts=127.0.0.0/8
         
 Add the following to /etc/postfix/main.cf
-        # content_filter = gpg-mailgate
+        content_filter = gpg-mailgate
+        
 Restart postfix.
